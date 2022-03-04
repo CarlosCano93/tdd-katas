@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class RomanNumeralsTest {
+class RomanNumeralsShould {
 
     @Test
     void number_cast_from_arabic_to_roman() {

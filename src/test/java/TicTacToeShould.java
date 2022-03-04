@@ -5,7 +5,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class TicTacToeTest {
+public class TicTacToeShould {
 
     private final TicTacToe.State[][] matrix = new TicTacToe.State[][]{
             {TicTacToe.State.NONE, TicTacToe.State.NONE, TicTacToe.State.NONE},

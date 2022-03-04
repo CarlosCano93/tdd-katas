@@ -5,7 +5,7 @@ import java.io.Console;
 import java.util.List;
 
 
-public class AnagramTest {
+public class AnagramShould {
 
     @Mock
     Console console;

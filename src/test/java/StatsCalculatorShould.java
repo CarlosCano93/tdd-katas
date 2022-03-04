@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-public class StatsCalculatorTest {
+public class StatsCalculatorShould {
 
     public static final Integer[] INPUT_3_4_1 = {3, 4, 1};
     public static final Integer[] INPUT_5_7_8 = new Integer[]{5, 7, 8};

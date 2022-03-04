@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-public class FibonacciTest {
+public class FibonacciShould {
 
     Fibonacci fibonacci = new Fibonacci();
 

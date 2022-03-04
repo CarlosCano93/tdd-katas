@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-public class LeapYearTest {
+public class LeapYearShould {
 
     private LeapYear leapYear;
 

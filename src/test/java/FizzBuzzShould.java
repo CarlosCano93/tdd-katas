@@ -5,7 +5,7 @@ import org.junit.Test;
  * The simplest iterations
  * RED - GREEN - REPEAT
  */
-public class FizzBuzzTest {
+public class FizzBuzzShould {
 
     private FizzBuzz fizzBuzz;
 
