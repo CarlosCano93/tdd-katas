@@ -6,7 +6,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
@@ -17,10 +17,13 @@ class PaymentServiceShould {
     private static final PaymentDetails PAYMENT_DETAILS = new PaymentDetails();
     private static final User USER = new User();
 
-    @Mock private FraudService fraudService;
-    @Mock private PaymentGateway paymentGateway;
+    @Mock
+    private FraudService fraudService;
+    @Mock
+    private PaymentGateway paymentGateway;
 
-    @InjectMocks PaymentService paymentService;
+    @InjectMocks
+    PaymentService paymentService;
 
     @Test
     void thrown_an_exception_if_paid_is_fraudulent() {
