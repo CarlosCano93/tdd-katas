@@ -1,4 +1,4 @@
-package fraudpayment;
+package paymentservice;
 
 /**
  * Given a user wants to bui her selected items
@@ -10,7 +10,6 @@ package fraudpayment;
  * Payment should only be sent to the payment gateway when payment is legit
  */
 public class PaymentService {
-
     private final FraudService fraudService;
     private final PaymentGateway paymentGateway;
 
@@ -20,7 +19,6 @@ public class PaymentService {
     }
 
     public void processPayment(User user, PaymentDetails paymentDetails) {
-
         if (fraudService.isFraudulent(user, paymentDetails))
             throw new RuntimeException();
 
@@ -29,14 +27,12 @@ public class PaymentService {
 }
 
 class FraudService {
-
     public boolean isFraudulent(User user, PaymentDetails paymentDetails) {
         throw new UnsupportedOperationException();
     }
 }
 
 class PaymentGateway {
-
     public void payWith(PaymentDetails paymentDetails) {
         throw new UnsupportedOperationException();
     }
